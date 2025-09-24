@@ -30,7 +30,7 @@ public class StudentManagementMainFormController {
     @FXML
     void btnAddStudent(ActionEvent event) {
         try{
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/add_student_form.fxml"))));
         }catch (IOException e){
             throw new RuntimeException(e);
         }
@@ -40,7 +40,7 @@ public class StudentManagementMainFormController {
     @FXML
     void btnBack(ActionEvent event) {
         try{
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/login_form.fxml"))));
         }catch (IOException e){
             throw new RuntimeException(e);
         }
@@ -50,7 +50,7 @@ public class StudentManagementMainFormController {
     @FXML
     void btnDeleteStudent(ActionEvent event) {
         try{
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/delete_student_form.fxml"))));
         }catch (IOException e){
             throw new RuntimeException(e);
         }
@@ -60,7 +60,7 @@ public class StudentManagementMainFormController {
     @FXML
     void btnUpdateStudent(ActionEvent event) {
         try{
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/update_student_form.fxml"))));
         }catch (IOException e){
             throw new RuntimeException(e);
         }
@@ -70,7 +70,7 @@ public class StudentManagementMainFormController {
     @FXML
     void btnViewStudent(ActionEvent event) {
         try{
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/login_form.fxml"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/view_student_form.fxml"))));
         }catch (IOException e){
             throw new RuntimeException(e);
         }
