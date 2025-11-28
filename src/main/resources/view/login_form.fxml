@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.LoginFormController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: darkblue;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="303.0" fitWidth="306.0" layoutY="46.0">
+         <image>
+            <Image url="@../images/icet.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="306.0" prefHeight="59.0" prefWidth="294.0" style="-fx-background-color: darkblue;" text="WELCOME  " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="41.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="306.0" layoutY="59.0" prefHeight="20.0" prefWidth="294.0" style="-fx-background-color: darkblue;" text="iCET Student Management System" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="306.0" layoutY="108.0" prefHeight="29.0" prefWidth="125.0" text="Register ID : " textFill="#f6f5f5">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="306.0" layoutY="209.0" prefHeight="29.0" prefWidth="125.0" text="Password : " textFill="#f4f0f0">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRegisterId" layoutX="345.0" layoutY="150.0" prefHeight="39.0" prefWidth="245.0" style="-fx-background-color: lightblue;" />
+      <PasswordField fx:id="txtPassword" layoutX="345.0" layoutY="250.0" prefHeight="39.0" prefWidth="245.0" style="-fx-background-color: lightblue;" />
+      <Button fx:id="btnLoginOnAction" layoutX="345.0" layoutY="330.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="25.0" prefWidth="245.0" style="-fx-background-color: #70e000;" text="Login" />
+   </children>
 </AnchorPane>

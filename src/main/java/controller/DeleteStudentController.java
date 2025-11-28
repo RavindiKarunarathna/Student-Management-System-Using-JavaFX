@@ -5,30 +5,21 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class LoginFormController {
+public class DeleteStudentController {
 
     @FXML
-    private Button btnLoginOnAction;
+    private Button btnCancel;
 
     @FXML
-    private PasswordField txtPassword;
-
-    @FXML
-    private TextField txtRegisterId;
+    private Button btnCancel11;
 
     Stage stage=new Stage();
     @FXML
-    void btnLoginOnAction(ActionEvent event) {
-        String registerId = txtRegisterId.getText();
-        String password = txtPassword.getText();
-        System.out.println("Register ID : " + registerId);
-        System.out.println("Password : " + password);
+    void btnCancel(ActionEvent event) {
         try{
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/student_management_main_form.fxml"))));
         }catch (IOException e){
@@ -36,5 +27,4 @@ public class LoginFormController {
         }
         stage.show();
     }
-
 }
